@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam redesign - HTML y CSS</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="https://kit.fontawesome.com/c58c6cbca2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+      <img class="bg-game" src="./img/bg-game.jpg" alt="Imagen juego">
+
+      <nav class="navbar">
+        <div class="navbar-content container">
+
+          <a href="#">
+            <img class="logo" src="./img/logo_steam.svg" alt="Logo del sitio">
+          </a>
+
+          <input type="checkbox" id="btnToggleNav">
+          <ul class="nav-list">
+            <li>
+              <a href="#">Tienda <i class='bx bx-chevron-down'></i></a>
+              <ul class="sub-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">lista de descubrimientos</a></li>
+                <li><a href="#">Lista de deseados</a></li>
+                <li><a href="#">Tienda de puntos</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Estadísticas</a></li>
+                <li><a href="#">Acerca de</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Comunidad <i class='bx bx-chevron-down'></i></a>
+              <ul class="sub-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Discusiones</a></li>
+                <li><a href="#">Workshop</a></li>
+                <li><a href="#">Mercado</a></li>
+                <li><a href="#">Retransmisiones</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Chat</a></li>
+            <li><a href="#">Soporte</a></li>
+          </ul>
+
+          <section class="navbar-content-right">
+
+            <label for="btnToggleNav" class="btn-toggle">
+              <i class='bx bx-menu-alt-right'></i>
+            </label>
+
+            <a href="#" class="user-link">
+              <span class="username">CoalsPlay</span>
+              <img class="avatar" src="./img/avatar.jpg" alt="Avatar usuario">
+            </a>
+
+            <button class="btn-notif">
+              <i class='bx bx-bell' ></i>
+              <div class="alert"></div>
+            </button>
+
+            <button class="btn-notif">
+              <i class='bx bx-cart'></i>
+            </button>
+          </section>
+        </div>
+
+      </nav>
+
+      <section class="sub-navbar">
+        <div class="subnav-content container">
+          <ul class="subnav-list">
+            <li><a href="#">Tu tienda</a></li>
+            <li><a href="#">Nuevo y destacable</a></li>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="#">Tienda de puntos</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Laboratorios</a></li>
+          </ul>
+
+          <search class="search-group">
+            <input type="text" placeholder="Buscar...">
+            <i class='bx bx-search' ></i>
+          </search>
+        </div>
+      </section>
+        
+      <div class="wrapper container">
+
+        <section class="bread-container">
+          <div class="card breadcrumb">
+            <a href="#">Todos los juegos</a>
+            <i class='bx bx-chevron-right'></i>
+            <a href="#">Acción</a>
+            <i class='bx bx-chevron-right'></i>
+            <a href="#">No Man's Sky</a>
+          </div>
+        </section>
+    
+        <section class="preview-game">
+  
+          <aside class="col-1">
+            
+            <section class="card info-game">
+              <img class="img-game" src="./img/bg-game.jpg" alt="Imagen del juego">
+            
+                <section class="info-game-content">
+                  <div class="header-info-game">
+                    <h2 class="title-game">No Man's Sky</h2>
+                    
+                    <section>
+                      <div class="price-container">
+                        <span class="offer">-50%</span>
+                        <div class="price-general">
+                          <span class="price-old">58,99€</span>
+                          <span class="price-now">29,49€</span>
+                        </div>
+                      </div>
+                      <p class="warning-offer text-center">La oferta finaliza el 21 marzo</p>
+                    </section>
+    
+                  </div>
+    
+                  <div class="line"></div>
+    
+    
+                  <a href="#" class="btn-buy">
+                    Añadir al carro
+                    <i class='bx bx-cart'></i>
+                  </a>
+    
+                  <a href="#" class="sub-link">Ver otras ediciones</a>
+    
+                  <div class="line"></div>
+    
+                  <p class="subcard text-1">
+                    No Man's Sky es un juego de ciencia ficción sobre exploración y supervivencia en un universo infinito generado de forma procedimental.
+                  </p>
+    
+    
+                  <ul class="subcard">
+                    <li><a href="#"><span class="title-data">RESEÑAS RECIENTES:</span> <span class="rating-game">Muy positivas</span> (1,879)</a></li>
+                    <li><a href="#"><span class="title-data">RESEÑAS GENERALES:</span> <span class="rating-game">Mayormente positivas</span> (222,449)</a></li>
+                    <li><div class="line"></div></li>
+                    <li><span class="title-data">FECHA DE LANZAMIENTO:</span> <span class="date-launch">12 AGO 2016</span></li>
+                    <li><div class="line"></div></li>
+                    <li><span class="title-data">DESARROLLADOR:</span> <a class="author-game" href="#">Hello Games</a></li>
+                    <li><span class="title-data">EDITOR:</span> <a class="author-game" href="#">Hello Games</a></li>
+                  </ul>
+    
+                  <section class="subcard">
+                    <p class="title-data">Etiquetas populares para este producto:</p>
+                    <div class="tag-container">
+                      <a href="#" class="tag">Mundo abierto</a>
+                      <a href="#" class="tag">Supervivencia en mundo abierto</a>
+                      <a href="#" class="tag">RV</a>
+                      <a href="#" class="tag">+</a>
+                    </div>
+                  </section>
+                </section>
+              </section>
+  
+              <section class="functionalities card">
+    
+                <ul class="functionalities-list">
+                  <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#">Un jugador</a></li>
+                  <li>
+                    <i class="fa-solid fa-users"></i>
+                    <a href="#">JcJ en línea</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-user-group"></i>
+                    <a href="#">Cooperativo en línea</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-certificate"></i>
+                    <a href="#">Logros de Steam</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-binoculars"></i>
+                    <a href="#">Detección de mov. en mando</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-vr-cardboard"></i>
+                    <a href="#">Compatible con RV</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <a href="#">Cromos de Steam</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-cloud"></i>
+                    <a href="#">Steam Cloud</a>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-chromecast"></i>
+                    <a href="#">Remote Play en tableta</a>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-chromecast"></i>
+                    <a href="#">Remote Play en TV</a>
+                  </li>
+                  <li> 
+                    <i class="fa-solid fa-tv"></i>
+                    <a href="#">HDR disponible</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-people-roof"></i>
+                    <a href="#">Préstamo familiar</a>
+                  </li>
+                </ul>
+  
+                <p class="title-data">Compat. total con mandos</p>
+  
+                <ul class="functionalities-list">
+                  <li>
+                    <i class='bx bxs-joystick'></i>
+                    <a href="#">Mandos de Xbox</a></li>
+                  <li>
+                    <i class='bx bxs-joystick'></i>
+                    <a href="#">Mandos de PlayStation</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <a href="#">API de Steam Input</a>
+                  </li>
+                </ul>
+                
+              </section>
+  
+              <section class="details card">
+                <ul class="details-list">
+                  <li><span class="title-data">TÍTULO:</span> <span class="basic-detail">No Man's Sky</span></li>
+                  <li><span class="title-data">GÉNERO:</span> <a class="text-link" href="#">Acción</a>, <a class="text-link" href="#">Aventura</a></li>
+                  <li><span class="title-data">DESARROLLADOR:</span> <a class="text-link" href="#">Hello Games</a></li>
+                  <li><span class="title-data">EDITOR:</span> <a class="text-link" href="#">Hello Games</a></li>
+                  <li><span class="title-data">FECHA DE LANZAMIENTO:</span> <span class="date-launch">12 AGO 2016</span></li>
+                </ul>
+  
+                <ul class="details-links">
+                  <li><a class="detail-link" href="#">Visitar el sitio web</a></li>
+                  <li><a class="detail-link" href="#">Ver historial de actualizaciones</a></li>
+                  <li><a class="detail-link" href="#">Leer noticias relacionadas</a></li>
+                  <li><a class="detail-link" href="#">Ver discusiones</a></li>
+                  <li><a class="detail-link" href="#">Buscar grupos de la comunidad</a></li>
+                </ul>
+              </section>
+  
+              <section class="langs card">
+                <span class="basic-detail">Idiomas</span>
+  
+                <table class="langs-table">
+                  <tr>
+                    <th></th>
+                    <th>Interfaz</th>
+                    <th>Voces</th>
+                    <th>Subtítulos</th>
+                  </tr>
+                  <tr>
+                    <th>Español</th>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Ingles</th>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Francés</th>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Italiano</th>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Aleman</th>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td></td>
+                  </tr>
+                </table>
+                <a href="#" class="sub-link">Ver los 14 idiomas disponibles</a>
+              </section>
+          </aside>
+  
+          <div class="col-2">
+  
+            <section class="card gallery">
+                
+              <div class="photo-preview">
+                <img class="img-active" src="./img/img-1.webp" alt="Imagen Nº1">
+              </div>
+    
+              <div class="photo-collection">
+                <img class="img-thumbnail active" src="./img/img-1.webp" alt="Imagen Nº1">
+                <img class="img-thumbnail" src="./img/img-2.jpg" alt="Imagen Nº1">
+                <img class="img-thumbnail" src="./img/img-3.jpg" alt="Imagen Nº1">
+                <img class="img-thumbnail" src="./img/img-4.jpg" alt="Imagen Nº1">
+                <img class="img-thumbnail" src="./img/img-5.jpg" alt="Imagen Nº1">
+                <img class="img-thumbnail" src="./img/img-6.jpg" alt="Imagen Nº1">
+                <img class="img-thumbnail" src="./img/img-7.jpg" alt="Imagen Nº1">
+                <img class="img-thumbnail" src="./img/img-8.webp" alt="Imagen Nº1">
+              </div>
+
+              <script defer>
+                const imgActive = document.querySelector('.img-active');
+                const imgGallery = document.querySelectorAll('.img-thumbnail');
+
+                imgGallery.forEach(e => {
+
+                  e.addEventListener('click', () => {
+                    const prevActive = document.querySelector('.img-thumbnail.active');
+
+                    imgActive.setAttribute('src', e.getAttribute('src'));
+
+                    e.classList.add('active');
+                    prevActive && prevActive.classList.remove('active');
+                  });
+                });
+              </script>
+              
+            </section>
+  
+  
+            <section class="card btns-options">
+              <div class="btns-options-left">
+                <a href="#" class="btn">Añadir a tu lista de deseados <i class='bx bx-heart'></i></a>
+                <a href="#" class="btn">Seguir <i class='bx bx-news' ></i></a>
+                <a href="#" class="btn">Ignorar <i class='bx bx-block'></i></a>
+              </div>
+  
+              <div class="btns-options-right">
+                <a href="#" class="btn">Ver tu lista <i class='bx bx-right-arrow-alt'></i></a>
+              </div>
+            </section>
+  
+            <section class="about-game card">
+              <h3 class="title-card">Acerca de este juego</h3>
+              <div class="line"></div>
+              
+              <p class="about-text">
+                Inspirado en las aventuras y la imaginación que adoramos de la ciencia ficción clásica, No Man's Sky te presenta toda una galaxia para que la explores, llena de singulares planetas y formas de vida, junto a peligro y acción constantes.
+  
+                En No Man's Sky, cada estrella es la luz de un sol lejano que orbitan planetas repletos de vida, y puedes ir a todos los que quieras. Vuela suavemente desde las profundidades espaciales hasta la superficie de los planetas, sin pantallas de carga y sin límites. En este universo infinito generado de forma procedimental, descubrirás lugares y criaturas que ningún otro jugador ha visto antes y, quizá, nunca más nadie vuelva a ver.
+              </p>
+  
+              <p class="about-text">
+                <span class="about-text-title">Emprende un viaje épico</span><br/>
+                En el centro de la galaxia yace un pulso irresistible que te incita a viajar hacia él para aprender la verdadera naturaleza del cosmos. Pero, al enfrentarte a criaturas hostiles y feroces piratas, descubrirás que la muerte tiene un precio y que tu supervivencia dependerá de las decisiones que tomes al mejorar tu nave, tu arma y tu traje.
+              </p>
+  
+              <p class="about-text">
+                <span class="about-text-title">Busca tu propio destino</span><br/>
+                Tu viaje a través de No Man's Sky solo depende de ti. ¿Serás un luchador que hace presa de los débiles y se lleva sus riquezas o que acaba con los piratas para hacerse con sus botines? Ese poder está en tu mano si mejoras la velocidad y el armamento de tu nave.
+                <br />
+                ¿Serás un comerciante? Encuentra ricos recursos en mundos olvidados y explótalos al mayor precio. Invierte en más espacio de carga y cosecharás enormes recompensas.
+                <br />
+                ¿O quizá un explorador? Ve más allá de las fronteras conocidas y descubre lugares y cosas que nadie ha visto antes. Mejora tus motores para llegar cada vez más lejos y refuerza tu traje para sobrevivir en entornos tóxicos capaces de matar a los desprevenidos.
+              </p>
+  
+              <p class="about-text">
+                <span class="about-text-title">Comparte tu viaje</span><br/>
+                La galaxia es un lugar que vive y respira. Los convoyes comerciales viajan entre las estrellas, las facciones luchan por dominar territorios, los piratas dan caza a los desprevenidos y la policía siempre vigila. Todos los demás jugadores viven en la misma galaxia, y si quieres podrás compartir con ellos tus descubrimientos en un mapa que abarca todo el espacio conocido. Quizá veas los resultados de sus acciones, además de los de las tuyas...
+              </p>
+            </section>
+  
+            <section class="requirements card">
+              <h3 class="title-card">Requisitos del sistema</h3>
+              <div class="line"></div>
+  
+              <div class="requirements-content">
+  
+                <section class="requirements-col-1">
+                  <h3 class="title-card">MÍNIMO:</h3>
+                  <ul class="requirements-list">
+                    <li>
+                      <span class="title-grey">Sistema operativo</span>
+                      <span class="title-data">Windows 10/11 (64-bit versions)</span>
+                    </li>
+                    <li>
+                      <span class="title-grey">Procesador</span>
+                      <span class="title-data">Intel Core i3</span>
+                    </li>
+                    <li>
+                      <span class="title-grey">Memoria</span>
+                      <span class="title-data">8 GB de RAM</span>
+                    </li>
+                    <li>
+                      <span class="title-grey">Gráficos</span>
+                      <span class="title-data">Nvidia GTX 1060 3GB, AMD RX 470 4GB, Intel UHD graphics 630</span>
+                    </li>
+                    <li>
+                      <span class="title-grey">Almacenamiento</span>
+                      <span class="title-data">15 GB de espacio disponible</span>
+                    </li>
+                    <li>
+                      <span class="title-grey">Compatibilidad con RV</span>
+                      <span class="title-data">SteamVR</span>
+                    </li>
+                  </ul>
+                </section>
+  
+                <section class="requirements-col-2">
+                  <h3 class="title-card">RECOMENDADO:</h3>
+                  <ul class="requirements-list">
+                    <li>
+                      <span class="title-grey">Sistema operativo</span>
+                      <span class="title-data">Windows 10/11 (64-bit versions)</span>
+                    </li>
+                    <li>
+                      <span class="title-grey">Procesador</span>
+                      <span class="title-data">Intel Core i5</span>
+                    </li>
+                    <li>
+                      <span class="title-grey">Memoria</span>
+                      <span class="title-data">12 GB de RAM</span>
+                    </li>
+                    <li>
+                      <span class="title-grey">Gráficos</span>
+                      <span class="title-data">Nvidia GTX 1060 3GB, AMD RX 470 4GB, Intel UHD graphics 630</span>
+                    </li>
+                    <li>
+                      <span class="title-grey">Almacenamiento</span>
+                      <span class="title-data">15 GB de espacio disponible</span>
+                    </li>
+                  </ul>
+                </section>
+  
+              </div>
+  
+            </section>
+  
+            <section class="other-products card">
+              <h3 class="title-card">Productos similares</h3>
+              <div class="line"></div>
+  
+              <div class="other-products-container">
+  
+                <article class="product">
+                  <a href="#">
+                    <img class="thumbnail-product" src="./img/product-1.jpg" alt="Producto 1">
+                  </a>
+                  <div class="info-product">
+                    <a href="#" class="title-product">Subnautica</a>
+                    <div class="price-container">
+                      <span class="offer">-67%</span>
+                      <div class="price-general">
+                        <span class="price-old">29,99€</span>
+                        <span class="price-now">9,89€</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+  
+                <article class="product">
+                  <a href="#">
+                    <img class="thumbnail-product" src="./img/product-2.jpg" alt="Producto 1">
+                  </a>
+                  <div class="info-product">
+                    <a href="#" class="title-product">Terraria</a>
+                    <div class="price-container">
+                      <span class="offer">-50%</span>
+                      <div class="price-general">
+                        <span class="price-old">9,75€</span>
+                        <span class="price-now">4,87€</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+  
+                <article class="product">
+                  <a href="#">
+                    <img class="thumbnail-product" src="./img/product-3.webp" alt="Producto 1">
+                  </a>
+                  <div class="info-product">
+                    <a href="#" class="title-product">Nightingale</a>
+                    <div class="price-container">
+                      <div class="price-general">
+                        <span class="normal-price">28,99€</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+  
+              </div>
+            </section>
+          </div>
+  
+        </section>
+
+      </div>
+
+
+      <footer class="main-footer">
+        <div class="footer-content container">
+
+          <section class="footer-col-1">
+            <img class="logo-footer" src="./img/logo_steam.svg" alt="Logo pie">
+            <p class="copy-text">
+              © 2024 Coals Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países.
+              <br><br>
+              Creado por <strong>CoalsPlay</strong>
+            </p>
+            <div class="line"></div>
+            <div class="footer-rrss-container">
+              <a class="btn" href="#"><i class='bx bxl-facebook-circle'></i></a>
+              <a class="btn" href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+          </section>
+
+          <section class="footer-col-2">
+            <ul class="footer-list">
+              <h3 class="title-list">Recursos</h3>
+              <li><a href="#">Acerca de Valve</a></li>
+              <li><a href="#">Empleo</a></li>
+              <li><a href="#">Steamworks</a></li>
+              <li><a href="#">Soporte</a></li>
+            </ul>
+          </section>
+          
+          <section class="footer-col-3">
+            <ul class="footer-list">
+              <h3 class="title-list">Links</h3>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Información legal</a></li>
+              <li><a href="#">Reembolsos</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+      
+  </body>
+</html>
